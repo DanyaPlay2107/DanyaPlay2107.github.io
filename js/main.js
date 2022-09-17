@@ -1,4 +1,4 @@
-// складной текстовый скрипт
+// collapsible text script
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -13,7 +13,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-// сценарий поиска команд
+// commands search script
 $(document).ready(function(){
     $("#myInput").on("keyup", function() {
       var value = $(this).val().toLowerCase();
