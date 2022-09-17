@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../assets/favicon.png">
+    <title>Danya Bot</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="/">
+                <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp;
+                <span>Danya Bot</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#/">Команды</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./team.html">Разработчик</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ссылки
+                        </a>
+                        <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="../invite" target="_blank">Invite
+                                    Bot</a>
+                            </li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="../invite" target="_blank">Support
+                                    Server</a></li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="jumbotron text-center bg-transparent">
+        <h1 class="commandstitle">Команды</h1>
+        <p class="lead commandssub">Просмотрите команды для бота Danya Bot.</p>
+        <hr>
+        <input id="myInput" type="text" class="searchbox" placeholder="Поиск">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="border"></div>
+        <br>
+        <br>
+        <br>
+        <div id="myCmd">
+            <br>
+            <button type="button" class="collapsible">d!help<span> - Проверьте список команд</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: aqua;">Основное</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!help </p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!help</p>  
+                <p>d!help ping</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">d!ping<span> - Эта команда используется для пинга бота</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Основное</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!ping</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!ping</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">d!avatar<span> Эта команда используется для отображения аватара вашего/другого участника.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(242, 44, 232);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!avatar</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!avatar</p>  
+                <p>d!avatar @ZoLiryzik</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!channel<span> - Проверка состояния канала.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!channel</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!channel</p>
+                <p>d!channel #channel</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!embed<span> - Эта команда используется для встраивания материалов в discord</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!embed 'title' 'desc'</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!embed 'Правила' 'Правила'</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!reverse<span> - Эта команда используется для изменения слов местами</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!reverse</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!reverse ланак</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!timer<span> - Эта команда используется для синхронизации</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!timer "продолжительность в ms"</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!timer 10000</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!whois<span> - 
+Проверьте, кто он/она</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!whois</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!whois</p>
+                <p>d!whois @user</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!weather<span> - Проверьте погоду в вашем регионе или регионе в соответствии с новейшим статусом климата/погоды</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Участники</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!weather <город></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!weather Египет</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!8ball<span> - Эта команда используется для того, чтобы спросить бота, на что он хотел ответить как 8ball</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Fun</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!8ball <вопросы></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!8ball Как тебя зобут?</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!cat<span> - Эта команда используется для случайной публикации изображений кошки</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Fun</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!cat</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!cat</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!meme<span> - Эта команда используется для создания некоторых классных мемов</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Fun</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!meme</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!meme</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!captcha <mention><span> - Эта команда используется для публикации captcha</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!captcha <mention></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!captcha</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!delete<span> - Эта команда используется для удаления кого-то, кого вы ненавидите, с помощью корзины Windows</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!delete</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!delete</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!gay<span> - Эта команда используется для придания изображению цвета радуги</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!gay</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!gay</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!trigger<span> - Эта команда используется для создания изображения триггера</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!trigger</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!trigger</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!clyde<span> - Даёт изоброжение того, что текст написал clyde</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!clyde <text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!clyde Привет</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!petpet<span> - Создавайте фотографии домашних животных</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!petpet <text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!petpet</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!magik<span> - Эта команда используется для магии</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!magik <text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!magik</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!iphonex<span> - Эта команда используется для изображении аватарки на iphonex</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Image</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!magik <text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!magik</p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!play<span> - Эта команда используется для воспроизведения какой-либо музыки, которая вам нравится</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!play song<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!play Blank Space </p>
+                <p>d!p Blank Space </p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!stop<span> - Эта команда используется для остановки музыки</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!stop<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!stop </p>
+              <p>d!dc </p>
+              <p>d!disconnect </p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!skip<span> - Эта команда используется для пропуска песен.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!skip<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!skip </p>
+              <p>d!s </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!queue<span> - Эта команда используется для получения очереди из музыкальной системы</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!queue<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!queue </p>
+              <p>d!q </p>
+             
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!autoplay<span> - Эта команда используется для включения или отключения функций автозапуска музыкальной системы</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!stop<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!stop </p>
+              <p>d!dc </p>
+              <p>d!disconnect </p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!loop<span> - Эта команда используется для остановки музыки</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!loop</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!loop </p>
+              <p>d!l </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!volume<span> - Эта команда используется для изменения громкости при воспроизведении песен</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!volume<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!volume </p>
+              <p>d!v </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!pause<span> - Эта команда используется для приостановки музыки внутри музыкального канала</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!pause<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!pause </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!resume<span> - Эта команда используется для возобновления воспроизведения музыки</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Music</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!resume</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!resume </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!stop<span> - Эта команда используется для остановки музыки</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!stop<text></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!stop </p>
+              <p>d!dc </p>
+              <p>d!disconnect </p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!ban<span> - Эта команда используется для бана участников</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!ban mention text</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!ban @don Спам </p>
+              
+            </div>
+            <br>
+            <br>
+         <button type="button" class="collapsible">d!clear<span> - Очистите сообщение с указанием суммы</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!clear сумму(1-100)</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!clear 100 </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!clearwarn<span> - Удалите предупреждения</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!clearwarn mention</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!clearwarn @radar </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!createchannel<span> - Легко создавайте канал с помощью команд</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!createchannel name type: text/voice</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!createchannel Чатик text </p>
+                <p>d!createchannel Общалка voice </p>
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!createemoji<span> - Легко создавайте смайлики с помощью команд</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!createemoji name вложение</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!createemoji server вложение </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!kick<span> - Эта команда используется для бана участников</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!kick mention причина</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!kick @don Спам </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!lockchannel<span> - Эта команда используется для блокировки каналов</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!lockchannel duration</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!lockchannel 1m </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!mute<span> - Эта команда используется для отключения звука некоторых людей</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!mute mention duration reason</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!mute @sasha 1h </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!rename<span> - Эта команда используется для бана участников</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!rename mentions nickname</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!rename @Piter Pit </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!slowmode<span> - Эта команда используется для изменения замедленного режима, поскольку страница настроек не может этого сделать</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!slowmode <1-21600></p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!slowmode 5 </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!unban<span> - Эта команда используется для снятия блокировки с кого-либо</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!unban USER ID</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!unban 1024544457034775881 </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!unlockchannel<span> - Эта команда используется для разблокировки канала</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!unlockchannel</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!unlockchannel </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!unmute<span> - Эта команда используется для включения кого-либо</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!unmute mention</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!unmute @Airport </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!warn<span> - Предупредить кого-то, кого вы ненавидите / против правил, 2 предупреждения  отключение звука, 3 предупреждения  пинок, 5 предупреждений  бан</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!warn mention reason</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!warn @ben 1.5 </p>
+              
+            </div>
+            <br>
+            <br>
+          <button type="button" class="collapsible">d!warnings<span> - Проверьте людей, которых вы упомянули, у которых есть предупреждения или нет</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Категория:</h4>
+                <p style="color: rgb(19, 182, 160);">Модерация</p>
+                <h4 style="color: #cccccc;">Использование:</h4>
+                <p>d!warnings mention</p>
+                <h4 style="color: #cccccc;">Примеры:</h4>
+                <p>d!warnings @Pite </p>
+              
+            </div>
+            <br>
+            <br>
+          
+    </div>
+    </div>
+
+    <footer class="mastfoot mb-auto">
+            <div class="container-fluid mb-auto">
+                <div class="row d-flex justify-content-center">
+                    <div class="">
+                        <p style="font-size: 19px; padding: 0px; margin: 0px;"><a href=""
+                                style="text-decoration: none; color: white;"></a></br>Авторское право 
+                  © 2022 TCC - Все права защищены</br>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
